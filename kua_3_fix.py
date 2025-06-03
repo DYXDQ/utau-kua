@@ -64,7 +64,7 @@ class UstProcessor:
     def _parse_ust(self):
         current_section = None
         try:
-            with open(self.ust_path, 'r', encoding='shift_jis, errors='ignore') as f:
+            with open(self.ust_path, 'r', encoding='shift_jis', errors='ignore') as f:
                 for line in f:
                     line = line.strip()
                     if line.startswith('[#'):
